@@ -1,0 +1,35 @@
+2005-08-13
+
+ant tasks:
+upgrade to ant 1.6.2 to support nested tasks
+
+documentation:
+made httpclient non-optional to be able to access its URIUtils class
+
+ftp:
+configuration to use user-home as root
+
+file:
+build windows filename according to the documentation. e.g. file:///c:/dir, file:////unchost/uncshare
+
+smb:
+now uses NtlmPasswordAuthentication for credentials passing
+fix for special characters in username/password
+allow domains with DOMAIN\USERNAME syntax
+
+
+2005-Jul-5  commons-vfs 1.0 RC2
+
+Notice: Some tests may fail unless you've followed the necessary setup
+  as described here: http://jakarta.apache.org/commons/vfs/testserver.html
+  This is ok; the jar will still be fine.
+
+Fixed multi-threading problems with ftp and webdav scheme
+
+Some documentation issues
+
+other minor fixes
+
+
+2005-Jun-29 commons-vfs 1.0 RC1
+Started the release cylce
